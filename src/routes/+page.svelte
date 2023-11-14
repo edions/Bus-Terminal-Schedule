@@ -1,8 +1,9 @@
 <script>
     import hero_image from '$lib/images/hero-image.jpg';
     import Table from '$lib/components/Table.svelte'
+    import Header from '$lib/components/Header.svelte';
 
-    let columns = ['Name', 'Age', 'Country'];
+    let columns = ['Name', 'Age', 'Country','Bus'];
   let data = [
     { id: 1, Name: 'John Doe', Age: 30, Country: 'USA' },
     { id: 2, Name: 'Jane Doe', Age: 25, Country: 'Canada' },
@@ -14,6 +15,8 @@
     <title>Home</title>
     <meta name="description" content="Bus" />
 </svelte:head>
+
+<Header />
 
 <img class="hero-img" src={hero_image} alt="Welcome" />
 
